@@ -1,10 +1,22 @@
 %pr-btn {
-    background: $pr-color;
-    color: #fff;
-    @include font(600,16px,normal);
+  background: $pr-color;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  @include font(600, 16px, normal);
+  &:hover {
+    background: #81D2BC;
+  }
+  &:active {
+    background: #016F52;
+  }
 }
 %title {
-    @include font(700,32px,normal);
-    letter-spacing: -0.96px;
-    color: $text-color;
+  @include font(700, 32px, normal);
+  letter-spacing: -0.96px;
+  color: $text-color;
+  @include media(660px) {
+    font-size: 20px;
+  }
 }
